@@ -1,21 +1,20 @@
 import React from 'react';
 import '../style.css';
 
-//API = 'https://jsonplaceholder.typicode.com/users';
-
 const PostList = () =>{
   return(
     <div className='userCard'>
-      <h3>
+      <h3 className="profileName">
         Name 
-        <span>
+        <span className="userName">
           (Username)
         </span>
       </h3>
-      <h4>Email</h4>
+      <h4 className="email">Email</h4>
       <div>
-        <h3>Address</h3>
-
+        <h4 className="address">
+          Address
+        </h4>
       </div>
     </div>
   )
