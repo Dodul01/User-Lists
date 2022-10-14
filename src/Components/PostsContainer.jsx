@@ -18,8 +18,14 @@ const PostsContainer = () => {
 
   return(
     <div className="container">
-      {users.map(()=>{
-        return <PostList />
+      {users.map(user =>{
+        return <PostList
+                  key={user.id}
+                  name={user.name}
+                  username={user.username}
+                  email={user.email}
+                  address={user.address.city}
+                />
       })}
     </div>
   )

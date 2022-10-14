@@ -1,19 +1,19 @@
 import React from 'react';
 import '../style.css';
 
-const PostList = () =>{
+const PostList = (props) =>{
   return(
-    <div className='userCard'>
+    <div className='userCard' key={props.id}>
       <h3 className="profileName">
-        Name 
+        Name: {props.name} 
         <span className="userName">
-          (Username)
+          ({props.username})
         </span>
       </h3>
-      <h4 className="email">Email</h4>
+      <h4 className="email">Email: {props.email}</h4>
       <div>
         <h4 className="address">
-          Address
+          Address: {props.address}
         </h4>
       </div>
     </div>

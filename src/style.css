@@ -22,8 +22,7 @@ nav{
   flex-wrap: wrap;
 }
 .userCard{
-  height: 200px;
-  width: 200px;
+  padding: 5px;
   margin: 10px;
   background: #FFF;
   border-radius: 5px;
